@@ -12,7 +12,7 @@ test_that("coefficient of gdppercap is equal to 0,00076",{
   # Extract the coefficient for 'gdpPercap'
   gdp_coefficient <- coefficients["gdpPercap"]
   # Check if the coefficient is equal to the expected value
-  expect_equal(unname(gdp_coefficient), 0.00076,
+  expect_equal(gdp_coefficient, 0.00076,
                tolerance = 0.01)
 })
 
